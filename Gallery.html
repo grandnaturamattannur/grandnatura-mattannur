@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Natura Gallery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Gallery.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <h1>Grand Natura</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="gallery-hero">
+  <h1>Gallery</h1>
+  <p>Explore the Beauty of Grand Natura</p>
+  
+</section>
+
+<!-- ================= PHOTOS ================= -->
+<section class="gallery-section">
+  <h2 class="section-title">Photos</h2>
+
+  <div class="gallery-grid">
+
+    <img src="https://images.unsplash.com/photo-1505692794403-34d4982f68b5" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471" onclick="openLightbox(this)">
+
+  </div>
+</section>
+
+<!-- ================= VIDEOS ================= -->
+<section class="gallery-section">
+  <h2 class="section-title">Videos</h2>
+
+  <div class="video-grid">
+
+    <!-- VIDEO 1 -->
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+
+    <!-- VIDEO 2 -->
+    <video controls>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+
+    <!-- Add more videos like this -->
+    
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span onclick="closeLightbox()">×</span>
+  <img id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(img){
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>

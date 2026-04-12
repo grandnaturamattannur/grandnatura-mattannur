@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Natura</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("active");
+  document.querySelector(".menu-toggle").classList.toggle("active");
+}
+</script>
+<nav class="navbar" id="navbar">
+
+  <!-- LEFT -->
+  <ul class="nav-left">
+    <li><a href="#" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+  </ul>
+
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="Logo.png" alt="Grand Natura Logo">
+  </div>
+
+  <!-- RIGHT -->
+  <ul class="nav-right">
+    <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li>
+      <a href="https://wa.me/918086846903" target="_blank" class="cta">Book Now</a>
+    </li>
+  </ul>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/918086846903" target="_blank" class="mobile-cta">Book Now</a>
+  </div>
+
+</nav>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Grand Natura</h1>
+    <p>Where Luxury Meets Nature</p>
+    <a href="https://wa.me/918086846903?text=Hi%20I%20want%20to%20book%20Grand%20Natura%20Convention%20Centre" 
+       target="_blank" class="hero-btn">Book Your Event</a>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  
+  <div class="about-container">
+    
+    <h2 class="about-title">About Grand Natura</h2>
+
+    <div class="about-card">
+
+      <div class="about-item">
+         <div class="box1">
+  <img src="your-image.jpg">
+</div>
+        <h3>Convention Centre</h3>
+        <p>
+          A magnificent, spacious venue for upto 
+          <span>5000 (Five Thousand) guests</span>, thoughtfully designed to host 
+          grand weddings, elegant receptions, and large public or cultural events 
+          in a natural surrounding.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <div class="box2">
+  <img src="your-image.jpg">
+</div>
+        <h3>Hill View Centre</h3>
+        <p>
+          A serene and well-designed space accommodating upto 
+          <span>500 (Five Hundred) guests</span>, ideal for cosy meetings, 
+          business events, birthdays, and wedding celebrations.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <div class="box3">
+  <img src="your-image.jpg">
+</div>
+        <h3>Trade Centre</h3>
+        <p>
+          An expansive <span>50,000 sq. ft.</span> exhibition space, perfect for 
+          hosting large-scale exhibitions, expos, carnivals, and product showcases 
+          with a flexible and dynamic environment.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20book%20Grand%20Natura%20Convention%20Centre" 
+   class="whatsapp-float" target="_blank">
+  💬
+</a>
+
+<script>
+window.addEventListener("scroll", () => {
+  const nav = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+</script>
+<section class="directors">
+  <h2 class="section-title">Managing Partners</h2>
+
+  <div class="director-container">
+
+    <!-- Director 1 -->
+    <div class="director-card">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Director 1">
+      </div>
+      <h3>Dr. Sudhir P</h3>
+    </div>
+
+    <!-- Director 2 -->
+    <div class="director-card">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36" alt="Director 2">
+      </div>
+      <h3>Dr. Suchitra Sudhir</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="partners">
+  <h2 class="section-title">Partners</h2>
+
+  <div class="partners-container">
+
+    <!-- Partner 1 -->
+    <div class="partners-card">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+      </div>
+      <h3>Arjun</h3>
+    </div>
+
+    <!-- Partner 2 -->
+    <div class="partners-card">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36">
+      </div>
+      <h3>Archana</h3>
+    </div>
+
+    <!-- Partner 3 -->
+    <div class="partners-card">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36">
+      </div>
+      <h3>Bejoy</h3>
+    </div>
+
+  </div>
+</section>
+<section class="gallery-cta">
+
+  <h2>Gallery</h2>
+  <p>View the Beauty of Grand Natura</p>
+
+  <a href="Gallery.html" class="gallery-btn">Explore Gallery</a>
+
+</section>
+<section class="contact-details" id="contact">
+
+  <h2 class="section-title">Contact Us</h2>
+
+  <div class="contact-container">
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/yourusername" target="_blank" class="contact-card">
+      <i class="fab fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p>@grandnatura</p>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/yourpage" target="_blank" class="contact-card">
+      <i class="fab fa-facebook-f"></i>
+      <h3>Facebook</h3>
+      <p>Grand Natura</p>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+919876543210" class="contact-card">
+      <i class="fas fa-phone"></i>
+      <h3>Call Us</h3>
+      <p>+91 98765 43210</p>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:grandnatura@gmail.com" class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>grandnatura@gmail.com</p>
+    </a>
+
+  </div>
+
+</section>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Grand Natura</h2>
+      <p>Luxury living inspired by nature. We create premium spaces with elegance and sustainability.</p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p><a href="mailto:grandnatura@gmail.com">grandnatura@gmail.com</a></p>
+
+      <!-- LOCATION -->
+      <p>
+        <a href="https://www.google.com/maps?q=11.9394787,75.5727931&z=17&hl=en" target="_blank">
+          📍 View Location
+        </a>
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Grand Natura. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</body>
+</html>
